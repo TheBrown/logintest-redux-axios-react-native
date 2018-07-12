@@ -25,30 +25,5 @@ export function authenticate(username, password) {
         }).catch(errr =>{
             dispatch(logInFailure(errr));
         });
-
-        // fetch(api_uri, {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/x-www-form-urlencoded',
-        //         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:58.0) Gecko/20100101 Firefox/58.0",
-        //         'Accept': 'application/json'
-        //     },
-        //     body: 'username=' + username + '&password=' + password
-        // }).then(res => {
-        //     console.log(res)
-        //     if (res.status === 200) {
-        //         return res;
-        //     } else {
-        //         var error = new Error(response.statusText)
-        //         error.response = response
-        //         throw error
-        //     }
-        // }).then(res => res.json())
-        // .then(data => {
-        //       dispatch(logInSuccess(data.id));
-        // }).catch(error => {
-        //     dispatch(logInFailure(error));
-        // })
-
     }
 }
